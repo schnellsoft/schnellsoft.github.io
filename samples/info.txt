@@ -1,0 +1,30 @@
+samples/
+    [list-id]/
+      index.html (show the list on direct client request)
+      assets/
+        style.css
+        index.js
+        img/
+      list.json
+      list-items/
+              [s-id]/
+                index.html (show the sample on direct client request)
+                assets/
+                src/ 
+
+---------------------------------------------------
+
+Lxxx = layout ; Cxxx = card ; Uxxx = utility;
+
+--- Last appended :
+
+L002 - layout
+C007 - card
+U001 - utilitar
+SVG001 - svg demo
+GC001 - grid with cards
+---------------------------------------------------
+
+
+
+---------------------------------------------------

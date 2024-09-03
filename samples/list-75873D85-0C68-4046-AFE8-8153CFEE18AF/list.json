@@ -1,0 +1,89 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Grid based layout",
+  "listid": "75873D85-0C68-4046-AFE8-8153CFEE18AF",
+  "articles": [
+    {
+      "id": "C09AAC99-C977-49CF-B2F7-958CB1F5EBE3",
+      "listid": "75873D85-0C68-4046-AFE8-8153CFEE18AF",
+      "title": "Grid | GC001",
+      "role": "grid",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "gc001",
+        "C09AAC99-C977-49CF-B2F7-958CB1F5EBE3",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "6B272693-DDD9-470C-85D4-31602EC41297",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C002",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": ""
+    },
+    {
+      "id": "BAD464AD-1E49-4D33-A43E-FA9C73890B29",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C001",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A card build with grid.",
+      "descrLong": ""
+    },
+    {
+      "id": "2491D0B6-9333-4BE5-8DA8-C27A2B7DAE28",
+      "listid": "75873D85-0C68-4046-AFE8-8153CFEE18AF",
+      "title": "Layout | L002",
+      "role": "layout",
+      "img": ["", ""],
+      "descrShort": "A simple layout using css grid",
+      "descrLong": "",
+      "keywords": [
+        "l002",
+        "2491D0B6-9333-4BE5-8DA8-C27A2B7DAE28",
+        "grid",
+        "layout"
+      ]
+    },
+    {
+      "id": "0887794B-D6D3-459F-8458-BB561A98B84F",
+      "title": "Replacing wrapper | U001",
+      "listid": "75873D85-0C68-4046-AFE8-8153CFEE18AF",
+      "role": "utility",
+      "img": ["", ""],
+      "descrShort": "A responsive grid that replace the need to use a wrapper.",
+      "descrLong": "",
+      "keywords": [
+        "u001",
+        "0887794B-D6D3-459F-8458-BB561A98B84F",
+        "grid",
+        "wrapper",
+        "replace",
+        "utility"
+      ]
+    },
+    {
+      "id": "433C502D-D355-48A0-94E9-543D76E99A0C",
+      "listid": "75873D85-0C68-4046-AFE8-8153CFEE18AF",
+      "title": "Layout | L001",
+      "role": "layout",
+      "img": ["", ""],
+      "descrShort": "A very simple responsive grid layout for a landing page.",
+      "descrLong": "",
+      "keywords": [
+        "433C502D-D355-48A0-94E9-543D76E99A0C",
+        "grid",
+        "layout",
+        "skeleton",
+        "l001"
+      ]
+    }
+  ]
+}

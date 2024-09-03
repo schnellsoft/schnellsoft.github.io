@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <title>Card | C006</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="ctall">
+       
+            <img src="https://picsum.photos/200/300" alt="">
+            <div class="card-content">
+                <h2 class="card-title">Something awesome</h2>
+                <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum autem natus nulla cupiditate, possimus suscipit ratione delectus ullam voluptas saepe.Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam, ipsa deserunt ipsam repudiandae nihil!</p>
+                <a href="#" class="button">Learn more</a>
+            </div>
+        
+    </div>
+    <script>
+        const ctall = document.querySelector(".ctall");
+        const ccontent = document.querySelector(".card-content");
+        const ch2 = document.querySelector(".card-title");
+        // console.dir(ccontent.getBoundingClientRect().height);
+        let ch2h = ch2.getBoundingClientRect().height + 10;
+        let dh = ccontent.getBoundingClientRect().height - ch2h;
+        let sdh = "-" + dh + "px";
+        //ccontent.style.marginBottom = "-" + dh + "px";
+        document.body.style.setProperty("--sdh", sdh);
+        
+        function fresize() {
+            let ch2h = ch2.getBoundingClientRect().height;
+            let dh = ccontent.getBoundingClientRect().height - ch2h;
+            let sdh = "-" + dh + "px";
+            document.body.style.setProperty("--sdh", sdh);
+            document.body.style.setProperty("--transition-down", "margin-bottom 500ms ease");
+        }
+        window.onresize = fresize;
+        window.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                document.body.style.setProperty("--transition-down", "margin-bottom 500ms ease");
+            }, 10);    
+        }, false);
+    </script>
+</body>
+</html>

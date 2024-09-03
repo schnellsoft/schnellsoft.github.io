@@ -1,0 +1,61 @@
+:root {
+    --clr-bkr01: rgb(137, 154, 224);
+    --clr-bkr02: rgb(19, 93, 22);
+    --clr-bkr03: rgb(74, 13, 187);
+    --clr-bkr04: rgb(54, 48, 45);
+    --clr-bkr05: rgb(187, 138, 13);
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-bkr01);
+    min-height: 100vh;
+}
+.ctall {
+    background-color: var(--clr-bkr02);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+       'h'
+       'n'
+       'm'
+       'f'
+    ;
+    grid-gap: 1rem;
+    min-height: 100vh;
+    padding: 1rem;
+}
+header, nav, main, footer {
+    background-color:#fff;
+}
+
+header {
+    grid-area: h;
+    min-block-size: 3rem;
+}
+nav {
+    grid-area: n;
+    min-block-size: 2rem;
+}
+main {
+    grid-area: m;
+}
+footer {
+    grid-area: f;
+    min-block-size: 3rem;
+}
+
+@media screen and (min-width: 48em) {
+    .ctall {
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+       'h h'
+       'n m'
+       'n f';
+    }
+}

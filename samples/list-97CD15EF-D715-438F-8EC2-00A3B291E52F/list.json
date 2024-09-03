@@ -1,0 +1,17 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Flexbox",
+  "listid": "97CD15EF-D715-438F-8EC2-00A3B291E52F",
+  "articles": [
+    {
+      "id": "09211952-8FCC-4780-9576-3F314BE7E2E4",
+      "listid": "97CD15EF-D715-438F-8EC2-00A3B291E52F",
+      "title": "Flexbox layout",
+      "img": ["", ""],
+      "descrShort": "This is a flexbox layout with center positioned cards.",
+      "descrLong": "This is the long descr",
+      "keywords": ["flexbox", "layout"]
+    }
+    
+  ]
+}

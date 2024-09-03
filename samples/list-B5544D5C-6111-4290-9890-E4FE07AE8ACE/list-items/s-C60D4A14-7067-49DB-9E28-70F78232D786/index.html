@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <title>Card | C005</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="item item1" data-status="">
+            <div class="fitem fitem1">
+                <h2>This is the title of the card Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, sequi.</h2>
+            </div>
+            <div class="fitem fitem2">
+                <p>This is the description of the card Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nesciunt excepturi minima aliquam, vero deleniti veritatis provident quae quibusdam eos?</p>
+            </div>
+        </div>
+        <div class="item item2"></div>
+        <div class="item item3 skeleton">
+            <img src="https://picsum.photos/500" alt="">
+        </div>
+        <div class="item item4"></div>
+    </div>
+    <script>
+
+        const hovct = document.querySelector(".item1");
+        const ct = document.querySelector(".fitem1");    
+
+        hovct.addEventListener("pointerenter", (ev) => {
+            if(ev.pointerType == "touch") return;
+            hovct.dataset.status="on";
+        }, false);
+
+        hovct.addEventListener("click", (ev) => {
+            if(ev.pointerType == "mouse") return;
+            if(hovct.dataset.status == "") { hovct.dataset.status="on"; }
+            else {
+                if(hovct.dataset.status == "on") { hovct.dataset.status=""; }  
+            }
+        }, false);
+
+        hovct.addEventListener("pointerleave", (ev) => {
+            if(ev.pointerType == "touch") return;
+            hovct.dataset.status="";
+        }, false);
+        
+    </script>
+</body>
+</html>

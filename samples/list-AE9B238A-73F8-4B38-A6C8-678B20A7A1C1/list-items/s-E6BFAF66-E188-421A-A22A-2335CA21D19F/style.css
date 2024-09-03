@@ -1,0 +1,56 @@
+:root {
+    --clr-primary: #073c6e;
+    --clr-bkr1: #a5abbd;
+    font-family: 'Google Sans', system-ui, serif;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+body {
+    background-color: var(--clr-bkr1, #708f8b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-inline-size: 2000px;
+    block-size: 100vh;
+}
+.res {
+    position: fixed;
+    inset: 5px;
+}
+.ctall {
+    border: 2px solid;
+    block-size: 30vh;
+    inline-size: 30vw;
+    overflow: hidden;
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    container-type: inline-size;
+    /* column-width: 10rem; */    
+}
+.ctall > p {
+    font-size: 1em;
+}
+@supports not (container-type: inline-size) {
+    .ctall {
+        background-color: red;
+        /*  */
+    }
+    .ctall > p {
+        /* font-size: 4em; */
+        font-size: clamp(1.3rem, 1.23rem + 2vw, 3rem);
+    }
+}
+
+@container (min-width: 200px) {
+    * {
+        background-color: yellow;
+    }
+    .ctall > p {
+        /* font-size: 4em; */
+        font-size: max(1.5em, 1.23em + 2cqi);
+    }
+}

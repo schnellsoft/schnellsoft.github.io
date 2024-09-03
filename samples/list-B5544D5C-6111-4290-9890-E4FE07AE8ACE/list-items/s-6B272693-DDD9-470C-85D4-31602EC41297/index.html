@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Card | C002</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="item1 skeleton"><img src="https://picsum.photos/700" alt="huhu"></div>
+        <div class="item2">            
+                <div class="item2p" data-state>
+                    <div class="item21"><div class="item21x"><span>v</span></div></div>
+                    <div class="item22">
+                        <h2>Lorem, ipsum.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque nulla praesentium amet cum suscipit quod.</p>
+                    </div>
+                </div>            
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector(".item21x");
+        const ct = document.querySelector(".item2p");
+        // const ctv = document.querySelector(".item2");
+        btn.addEventListener("click", () => {
+            if(ct.dataset.state == "up") {ct.dataset.state = "down";}
+            else if(ct.dataset.state == "down" || ct.dataset.state == "") ct.dataset.state = "up";     
+        }, false); 
+        // ct.addEventListener("animationend", (ev) => {
+        //     if(ev.target.dataset.state == "down")
+        // }, false);
+    </script>
+</body>
+</html>

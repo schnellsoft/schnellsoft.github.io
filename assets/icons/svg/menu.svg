@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0 h100 v100 h-100 v-100 z" fill="transparent" />
+   
+    <path d="M10 20 h80 C90,20 95,25 90,30 h-80 C10,30 5,25 10,20 z" fill="var(--clr-light, #000)" id="bar1"/>
+    <path d="M10 40 h80 C90,40 95,45 90,50 h-80 C10,50 5,45 10,40 z" fill="var(--clr-light, #000)" id="bar2"/>
+    <path d="M10 60 h80 C90,60 95,65 90,70 h-80 C10,70 5,65 10,60 z" fill="var(--clr-light, #000)" id="bar3"/>
+</svg>

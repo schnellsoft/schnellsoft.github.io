@@ -1,0 +1,26 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Landing Pages",
+  "listid": "7F9EE80E-A7DC-4F30-BBE8-73735C2701BD",
+  "articles": [
+    {
+      "id": "EB48D25C-153C-477B-A997-2E60B350A932",
+      "listid": "7F9EE80E-A7DC-4F30-BBE8-73735C2701BD",
+      "title": "Primary | Secondary | Tertiary - U001",
+      "role": "color",
+      "img": ["", ""],
+      "descrShort": "Colors code (rgb, hexa, hsl) and classification",
+      "descrLong": "",
+      "keywords": [
+        "u001",
+        "EB48D25C-153C-477B-A997-2E60B350A932",
+        "color",
+        "color type",
+        "color code",
+        "primary",
+        "tertiary",
+        "secondary"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+:root {
+    --clr-bkr-body: hsl(240, 41%, 72%);
+    --clr-bkr-01: hsl(31, 96%, 50%, 0);
+    --clr-bkr-02: hsl(240, 51%, 58%);
+    --clr-bkr-03: hsla(220, 73%, 48%);
+    --clr-bkr-04: hsla(0, 73%, 48%, 0.3);
+    --clr-bkr-05: hsla(0, 29%, 73%, 0.3);
+    --clr-bkr-06: hsla(160, 51%, 41%);
+    --clr-bkr-07: hsla(59, 73%, 48%, 0.3);
+    --clr-no-01: #481e1e;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-bkr-body, #e2c4c4);
+    min-block-size: 100vh; 
+}
+.ctall {
+    margin: 1rem 0;
+    inline-size: minmax(10rem, 30vw);
+    max-inline-size: 30rem;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1rem) minmax(0, 1rem) 1fr minmax(0, 1rem)  minmax(0, 1rem);
+    grid-template-rows: 3rem 3rem min-content 3rem minmax(3rem, min-content );
+    justify-content: center;
+    background-color: var(--clr-bkr-01);
+}
+.item1 {
+    background-color: var(--clr-bkr-06);
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+}
+.item2 {
+    display: grid;
+    grid-column: 3;
+    grid-row: 1 / 3;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
+    z-index: 10;
+    border: none;
+}
+.item2 > h2 {
+    text-align: center;
+    font-size: clamp(0.5rem, 0.5rem + 4vw ,2.5rem);
+    line-height: clamp(0.5rem, 0.5rem + 4vw ,2.7rem);
+    padding: 0.8rem;
+    letter-spacing: 0.3rem;
+    color: #c7c6c6;
+    background-color: hsla(0, 47%, 11%, 0.5);
+    block-size: min-content;
+    display: block;
+}
+.item3 {
+    grid-column: 2 / 5;
+    grid-row: 2 / 5;
+    z-index: 5;
+    aspect-ratio: 1 / 1;
+}
+.item3 > img {
+    display: block;
+    inline-size: 100%;
+    object-fit: cover;
+}
+.item4 {
+    grid-column: 1 / -1;
+    grid-row: 4 / 6;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-template-columns: subgrid;
+    background-color: var(--clr-bkr-06);
+}
+.item4 > p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 0.5rem + 4vw ,1.5rem);
+    grid-column: 2 / 5;
+    grid-row: 5;
+    color:#bababa;
+}
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 45%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 25%);
+  }
+}
+@supports not (grid-template-rows: subgrid) {
+    .item4 > p {
+        padding: 3rem 0.3rem 0.3rem; 
+    }
+}

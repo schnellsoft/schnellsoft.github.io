@@ -1,0 +1,16 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Flexbox",
+  "listid": "63C32EC9-024B-4057-8621-74977FE64E66",
+  "articles": [
+    {
+      "id": "EBDEC5E6-9672-4A50-B5DD-04E742381E1E",
+      "listid": "63C32EC9-024B-4057-8621-74977FE64E66",
+      "title": "This is a flexbox layout",
+      "img": ["", ""],
+      "descrShort": "This is the short descr",
+      "descrLong": "This is the long descr"
+    }
+    
+  ]
+}

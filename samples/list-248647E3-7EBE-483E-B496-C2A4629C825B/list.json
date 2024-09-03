@@ -1,0 +1,18 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Tables",
+  "listid": "248647E3-7EBE-483E-B496-C2A4629C825B",
+  "articles": [
+
+    {
+      "id": "E6BFAF66-E188-421A-A22A-2335CA21D19F",
+      "listid": "248647E3-7EBE-483E-B496-C2A4629C825B",
+      "title": "Responsive HTML Table",
+      "img": ["", ""],
+      "descrShort": "This table is the classic html element <table> that is customized for any device.",
+      "descrLong": "This is the long descr",
+      "keywords": ["table", "responsive", "<table>"]
+    }
+    
+  ]
+}

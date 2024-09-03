@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid replacing @container or wrapper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="h-item h-item1">
+            <div class="h-item11"><p>Lorem</p></div>
+            <div class="h-item12"><p>Ipsum</p></div>
+        </div>
+        <div class="h-item h-item2">
+            <nav>
+                <ul>
+                    <li><a href="#" class="amenu">Home</a></li>
+                    <li><a href="#" class="amenu">About</a></li>
+                    <li><a href="#" class="amenu">Blog</a></li>
+                    <li><a href="#" class="amenu">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="flow content-grid">
+        <!-- <div class="wrapper"> -->
+            <h1 class="site-title section-pop content">No more containers!</h1>
+            <p class="cp1"><span class="crt">P01</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, suscipit.</p>
+            <p class="cp2"><span class="crt">P02</span>Quae tenetur a necessitatibus minima nesciunt. Culpa minus repudiandae asperiores.</p>
+            <p class="cp3 content call-to-action"><span class="crt">P03</span>Illo nisi commodi perferendis voluptatibus odio assumenda dolorem sint minima.</p>
+            <p class="cp4"><span class="crt">P04</span>Provident assumenda doloremque aliquam eum necessitatibus dolor nihil, eos porro!</p>
+            <p class="cp5"><span class="crt">P05</span>Ratione adipisci at, autem iste ipsum iure cupiditate! Quam, provident.</p>
+            <p class="cp6"><span class="crt">P06</span>Impedit similique alias deserunt, nemo sunt quo aperiam pariatur neque!</p>
+        <!-- </div> -->
+        <section class="full-width section-padding content-grid">
+            <h2 class="content section-title">This section is a subgrid</h2>
+            <p class="breakout">Breakout Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequuntur unde dolorum alias velit officia. Illum repudiandae ut molestias blanditiis tempore fugiat natus nostrum quam, delectus fugit quis velit neque.</p>
+            <p class="full-width">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex illo autem laboriosam provident harum, nisi, accusamus inventore amet totam unde esse dolorem eligendi pariatur reprehenderit consectetur. Eos amet cumque cupiditate eaque in corporis consectetur dicta ducimus veritatis minus ut, facere debitis possimus nesciunt accusamus et!</p>
+        </section>
+        <img class="full-width" src="https://picsum.photos/1200/300" alt="my image">
+        <p class="breakout">Breakout Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequuntur unde dolorum alias velit officia. Illum repudiandae ut molestias blanditiis tempore fugiat natus nostrum quam, delectus fugit quis velit neque.</p>
+    </main>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "doctitle": "Layouts",
+  "listtitle": "Landing Pages",
+  "listid": "AE9B238A-73F8-4B38-A6C8-678B20A7A1C1",
+  "articles": [
+    {
+      "id": "E6BFAF66-E188-421A-A22A-2335CA21D19F",
+      "listid": "AE9B238A-73F8-4B38-A6C8-678B20A7A1C1",
+      "title": "This",
+      "img": ["", ""],
+      "descrShort": "This is the short descr",
+      "descrLong": "This is the long descr"
+    }
+  ]
+}

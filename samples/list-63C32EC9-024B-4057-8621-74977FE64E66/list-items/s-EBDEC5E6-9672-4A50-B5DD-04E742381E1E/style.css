@@ -1,0 +1,30 @@
+:root {
+    --clr-bkr01: rgb(137, 154, 224);
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-bkr01);
+}
+.ctf {
+    margin: 3rem;
+    padding: 1rem;
+    border: 2px solid;
+    display: flex;
+    block-size: 14rem;;
+}
+.item1, .item2 {
+    border: 2px solid;
+}
+.item1 {
+    min-inline-size: 3rem;
+    block-size: 3rem;
+    margin-right: 1rem;
+}
+.item2 {
+    block-size: 3rem;
+    flex-basis: 100%;
+}

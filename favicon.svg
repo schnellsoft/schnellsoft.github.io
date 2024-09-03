@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+               <path d="M5 25 Q40,100 90,50 L70,50 Q40,80 5,25 M40,70 z" fill="#ffffff" id="boat1" transform="translate(0, 20)"/>
+               <path d="M5 25 Q40,100 90,50 L70,50 Q40,80 5,25 M40,70 z" fill="#ffffff" id="boat2" transform="translate(90,10) rotate(105 10 10)" transform-origin="50,50" />
+               <path d="M37,5 h3 v80 h-3 v-80 z" transform="rotate(15, 5, 5) translate(19, -15)" fill="#ffffff" />
+            </svg>

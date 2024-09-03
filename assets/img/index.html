@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --clr-bkr: hsl(0, 41%, 39%);
+            --clr-light: #fff;
+        }
+        .cticon {
+            width: 50px;height: 50px;
+            /* border-radius: 50%; */
+            margin: 20px;
+            background-color: var(--clr-bkr);
+        }
+    </style>
+</head>
+<body>
+    <h1>My Boat Image</h1>
+    <div class="cticon">
+       <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" >
+        <path d="M5 25 Q40,100 90,50 L70,50 Q40,80 5,25 M40,70 z" fill="var(--clr-light, #000)" id="boat1"
+         transform="translate(0, 20)"/>
+         <path d="M5 25 Q40,100 90,50 L70,50 Q40,80 5,25 M40,70 z" fill="var(--clr-light, #000)" id="boat2"
+            transform="translate(90,10) rotate(105 10 10)" transform-origin="50,50"
+         />
+         <path d="M37,5 h3 v80 h-3 v-80 z" transform="rotate(15, 5, 5) translate(19, -15)" fill="var(--clr-light, #000)" />
+    </svg>
+    </div>
+    <div class="cticon">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20 h80 C90,20 95,25 90,30 h-80 C10,30 5,25 10,20 z" fill="var(--clr-light, #000)" id="bar1"/>
+                <path d="M10 40 h80 C90,40 95,45 90,50 h-80 C10,50 5,45 10,40 z" fill="var(--clr-light, #000)" id="bar2"/>
+                <path d="M10 60 h80 C90,60 95,65 90,70 h-80 C10,70 5,65 10,60 z" fill="var(--clr-light, #000)" id="bar3"/>
+            </svg>
+        </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+:root {
+    --clr-bkr-body: hsl(240, 41%, 72%);
+    --clr-bkr-01: hsl(256, 41%, 20%);
+    --clr-bkr-02: hsl(240, 51%, 58%);
+    --clr-bkr-03: hsla(220, 73%, 48%, 0.3);
+    --clr-bkr-04: hsla(0, 73%, 48%, 0.3);
+    --clr-bkr-05: hsla(0, 29%, 73%, 0.3);
+    --clr-bkr-06: hsla(161, 73%, 48%, 0.3);
+    --clr-bkr-07: hsla(59, 73%, 48%, 0.3);
+    --clr-no-01: #481e1e;
+
+    --ff-primary: Heebo, sans-serif;
+    --ff-secondary: Bungee, cursive;
+    --ff-accent: Bungee Shade, cursive;
+    --ff-roboto: 'Roboto', sans-serif
+}
+/* ============= reset css ======================*/
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+input, button,
+textarea, select {
+  font: inherit;
+}
+textarea:not([rows]) {
+  min-height: 10em;
+}
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*========================   original css settings ============================*/
+
+html {
+    font-family: var(--ff-roboto);
+}
+body {
+    background-color: var(--clr-bkr-body, #e2c4c4);
+    min-block-size: 100vh;
+    padding-top: 5vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+div.card {
+    background-color: hsl(0, 0%, 99% / 0.1);
+    /* border: 2px solid; */
+    /* block-size: auto; */
+    inline-size: clamp(7rem, 1rem + 90vw, 25rem);
+    margin-inline: auto;
+    aspect-ratio: 1 / 1.5;
+    display: grid;
+}
+.card > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.card > img {
+    width: 100%;
+    /* height: auto; */
+    object-fit: cover;
+    aspect-ratio: 1 / 1.25;
+
+}
+.card__content {
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem 0.2rem;
+    align-self: end;
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.1);
+}
+.card__title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: firebrick;
+}
+.card__price {
+    font-size: 1.75rem;
+}
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 50%);
+  }
+
+  100% {
+    background-color: hsl(200, 20%, 35%);
+  }
+}
+
+

@@ -1,0 +1,17 @@
+{
+  "doctitle": "SVG",
+  "listtitle": "SVG Features",
+  "listid": "87DA8E22-D0CB-4F69-AACA-91BB30F1F6A3",
+  "articles": [
+    {
+      "id": "4B12A5CB-E55E-4006-90E7-C2076FDD8DF4",
+      "listid": "87DA8E22-D0CB-4F69-AACA-91BB30F1F6A3",
+      "title": "Clip Animation - SVG001",
+      "role": "svg",
+      "img": ["", ""],
+      "descrShort": "An animated clipping circle area.",
+      "descrLong": "",
+      "keywords": ["svg001", "87DA8E22-D0CB-4F69-AACA-91BB30F1F6A3", "svg"]
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "doctitle": "Elements",
+  "listtitle": "Cards",
+  "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+  "articles": [
+
+    {
+      "id": "D35C33B9-D533-4B46-912C-3E85F3A67437",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C008",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c008",
+        "D35C33B9-D533-4B46-912C-3E85F3A67437",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+
+    {
+      "id": "A625818C-4B96-42F0-9AF4-D8B15161DAC0",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C007",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c007",
+        "A625818C-4B96-42F0-9AF4-D8B15161DAC0",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "20862C13-139F-4ADB-BE3C-2073330FCF62",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C006",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c006",
+        "20862C13-139F-4ADB-BE3C-2073330FCF62",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "C60D4A14-7067-49DB-9E28-70F78232D786",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C005",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c005",
+        "C60D4A14-7067-49DB-9E28-70F78232D786",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "7EFBD0C6-63DA-46B4-B109-D0270CBF195E",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C004",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c004",
+        "7EFBD0C6-63DA-46B4-B109-D0270CBF195E",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "1C306BC4-AE3F-474D-8508-02807B38D8A5",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C003",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c003",
+        "1C306BC4-AE3F-474D-8508-02807B38D8A5",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "6B272693-DDD9-470C-85D4-31602EC41297",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C002",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A simple card using css grid",
+      "descrLong": "",
+      "keywords": [
+        "c002",
+        "6B272693-DDD9-470C-85D4-31602EC41297",
+        "grid",
+        "layout",
+        "card"
+      ]
+    },
+    {
+      "id": "BAD464AD-1E49-4D33-A43E-FA9C73890B29",
+      "listid": "B5544D5C-6111-4290-9890-E4FE07AE8ACE",
+      "title": "Card | C001",
+      "role": "card",
+      "img": ["", ""],
+      "descrShort": "A card build with grid.",
+      "descrLong": "",
+      "keywords": [
+        "c001",
+        "BAD464AD-1E49-4D33-A43E-FA9C73890B29",
+        "card",
+        "responsive",
+        "container",
+        "@container",
+        "subgrid",
+        "grid"
+      ]
+    }
+  ]
+}

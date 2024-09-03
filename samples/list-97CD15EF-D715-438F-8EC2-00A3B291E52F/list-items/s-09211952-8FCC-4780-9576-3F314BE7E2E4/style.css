@@ -1,0 +1,53 @@
+:root {
+    --clr-bkr-body: hsl(240, 41%, 72%);
+    --clr-bkr-01: hsl(256, 41%, 20%);
+    --clr-bkr-02: hsl(240, 51%, 58%);
+    --clr-bkr-03: hsla(220, 73%, 48%, 0.3);
+    --clr-bkr-04: hsla(0, 73%, 48%, 0.3);
+    --clr-bkr-05: hsla(0, 29%, 73%, 0.3);
+    --clr-bkr-06: hsla(161, 73%, 48%, 0.3);
+    --clr-bkr-07: hsla(59, 73%, 48%, 0.3);
+    --clr-no-01: #481e1e;
+}
+html {
+    font-family: 'Roboto', sans-serif;
+}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--clr-bkr-body, #e2c4c4);
+    min-block-size: 100vh; 
+    /* display: grid; */
+    /* justify-content: center; */
+    /* text-align: center; */
+    /* display: flex;
+     */
+    /* align-items: center; */
+}
+.ctall {
+    
+    border: 2px solid;
+    margin: 1rem 0;
+    margin-inline: auto;
+    padding: 0.5rem;
+    inline-size: 70vw;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* grid-template-columns: repeat(auto-fit, 12rem);
+    grid-auto-rows: 12rem;
+    
+     */
+}
+.item{
+    block-size: 12rem;
+    inline-size: 12rem;
+    min-block-size: 12rem;
+    min-inline-size: 12rem;
+    border: 2px solid;
+
+}

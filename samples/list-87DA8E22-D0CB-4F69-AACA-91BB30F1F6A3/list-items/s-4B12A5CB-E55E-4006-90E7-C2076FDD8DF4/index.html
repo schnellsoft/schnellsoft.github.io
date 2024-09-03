@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <title>SVG Clip Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg height="50" width="50">
+        <circle cx="10" cy="10" fill="#fff"  id="circlep" />
+        <clipPath id="clipping-path-1" clipPathUnits="objectBoundingBox">
+            <circle cx="0.50" cy="0.50"  id="circle" />
+            <animate attributeName="r" begin="0s" dur="1s" repeatCount="1" from="0.001" to="1"/>
+        </clipPath>
+    </svg>
+    
+    <div class="ctall">
+        <div class="ctimg skeleton">
+           <!-- <picture> 
+            <source srcset="https://picsum.photos/200" media="(min-width: 20rem)" />
+            <source srcset="https://picsum.photos/200/400" media="(min-width: 16rem)" />
+                <img src="https://picsum.photos/200/700" alt="dsfd dfdf">
+           </picture>  -->
+           <img src="https://picsum.photos/200" alt="dsfd dfdf">
+        </div>
+        <div class="item2">
+          <p class="target">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi beatae ducimus quis aliquam, delectus fugiat rem tempora alias odit hic, explicabo inventore! Corrupti laudantium facilis animi eligendi, excepturi accusamus optio.</p>
+        </div>
+        <div class="item1">
+            <button id="btn01">Info</button>
+        </div>
+    </div>
+    <script>
+        const btn01 = document.querySelector("#btn01");
+        const circle = document.querySelector("#circle");
+        const lst = circle.classList; 
+        btn01.addEventListener("click", () => {
+            let vbopen = 0; let vbclose = 0;
+            vbopen = Number(lst.contains("open"));
+            vbclose = Number(lst.contains("close"));
+            if((!vbopen) && (!vbclose)) {lst.add("open"); circle.setAttribute("r","1");}
+            if(vbopen && (!vbclose)) {lst.replace("open","close");  circle.setAttribute("r","0.001");}
+            if((!vbopen) && vbclose) {lst.replace("close","open"); circle.setAttribute("r","1");} 
+        }, false);
+    </script>
+</body>
+</html>
