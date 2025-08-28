@@ -17,6 +17,11 @@
         --snd-header-bkr-clr: #101017;
         --snd-header-clr: #decf8c;
         --snd-header-fsz: 1.4rem;
+        --snd-mob-header-fsz: 1.1rem;
+        --snd-mob-header-submenu-fsz: 0.7rem;
+        --snd-resct-bkr-clr: #372121;
+        --snd-resct-clr: #edc40e;
+        --snd-resct-fsz: 1.4rem;
       }
       main {
         width: 100%;
@@ -46,15 +51,25 @@
         box-sizing: border-box;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-CnUI3oYk.js"></script>
+    <script type="module" crossorigin src="/assets/index-Cf5hhVC8.js"></script>
   </head>
   <body>
     <snd-header-aa></snd-header-aa>
-
+    <snd-header-mob-aa class="snd-mob-header-hidden"></snd-header-mob-aa>
+    <!--
     <div class="ct-above-all">
       <button id="btn01">Click 01</button>
     </div>
-    <script></script>
+   
+    <script>
+      let el = document.querySelector("snd-header-aa");
+      console.log(el);
+      window.addEventListener("resize", () => {
+        console.log("resize");
+        el.reinit();
+      });
+    </script>
+     -->
     <main></main>
     <footer></footer>
   </body>
