@@ -12,6 +12,8 @@
     <meta name="apple-mobile-web-app-title" content="ARKMED" />
     <meta name="msapplication-TileColor" content="#101017" />
     <meta name="msapplication-navbutton-color" content="#101017" />
+    <script src="./src/assets/uikit.min.js"></script>
+    <script src="./src/assets/uikit-icons.min.js"></script>
     <style>
       :root {
         --snd-header-bkr-clr: #101017;
@@ -51,26 +53,83 @@
         box-sizing: border-box;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-Cf5hhVC8.js"></script>
+    <script type="module" crossorigin src="/assets/index-CKAh_UxS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Cihi71qW.css" />
   </head>
   <body>
-    <snd-header-aa></snd-header-aa>
-    <snd-header-mob-aa class="snd-mob-header-hidden"></snd-header-mob-aa>
-    <!--
+    <snd-header-aa style="z-index: 100000"></snd-header-aa>
+    <snd-header-mob-aa
+      class="snd-mob-header-hidden"
+      style="z-index: 100000"
+    ></snd-header-mob-aa>
+    <main>
+      <div
+        class="snd-slide uk-position-relative uk-visible-toggle uk-light"
+        tabindex="-1"
+        uk-slideshow="animation: push"
+      >
+        <div class="uk-slideshow-items">
+          <div>
+            <img src="/assets/d1-NU1OSsxx.jpg" alt="" uk-cover />
+            <div class="uk-position-center uk-position-small uk-text-center">
+              <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+              <p uk-slideshow-parallax="x: 200,-200">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="/assets/d2-BUfqGbCg.jpg" alt="" uk-cover />
+            <div class="uk-position-center uk-position-small uk-text-center">
+              <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+              <p uk-slideshow-parallax="x: 200,-200">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="/assets/d3-FeaE4Kt6.jpg" alt="" uk-cover />
+            <div class="uk-position-center uk-position-small uk-text-center">
+              <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">
+                Heading
+              </h2>
+              <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">
+                Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a
+          class="uk-position-center-left uk-position-small uk-hidden-hover"
+          href
+          uk-slidenav-previous
+          uk-slideshow-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-hidden-hover"
+          href
+          uk-slidenav-next
+          uk-slideshow-item="next"
+        ></a>
+      </div>
+      <!--
     <div class="ct-above-all">
       <button id="btn01">Click 01</button>
     </div>
-   
-    <script>
-      let el = document.querySelector("snd-header-aa");
-      console.log(el);
-      window.addEventListener("resize", () => {
-        console.log("resize");
-        el.reinit();
-      });
-    </script>
-     -->
-    <main></main>
+    -->
+      <script>
+        let el = document.querySelector(".snd-slide");
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        el.setAttribute("ratio", "" + w + ":" + h);
+        window.addEventListener("resize", () => {
+          let w = window.innerWidth;
+          let h = window.innerHeight;
+          el.setAttribute("ratio", "" + w + ":" + h);
+        });
+      </script>
+    </main>
     <footer></footer>
   </body>
 </html>
