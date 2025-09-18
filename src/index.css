@@ -1,0 +1,48 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --snd-fsz-200: clamp(1rem, 0.5vw + 0.875rem, 1.1875rem);
+  --snd-fsz-300: clamp(1.2rem, 0.8vw + 1rem, 1.5rem);
+  --snd-fsz-400: clamp(1.5rem, 3vw + 0.6rem, 2rem);
+  --snd-main-clr: #decf8c;
+
+  --snd-emp-clr-bkr: #242424;
+  --snd-emp-clr: rgba(229, 215, 108, 0.984);
+
+  color-scheme: light dark;
+  color: rgba(229, 215, 108, 0.984);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  text-align: center;
+}
+
+.snd-card {
+  display: block;
+  width: 400px;
+  height: 600px;
+  background-color: #7c7474;
+}
+
+.snd-ct-demo {
+  width: 70%;
+  height: auto;
+  margin-inline: auto;
+}
+
+.snd-arr > svg {
+  color: #ddc513;
+  width: 24px;
+  height: 41px;
+}
+.snd-mg-1 {
+  margin: 0.5rem;
+}
