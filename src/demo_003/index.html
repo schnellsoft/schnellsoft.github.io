@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="accordion.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>This is test</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="faq" aria-labelledby="faq-title">
+            <p class="faq__eyebrow">Support &amp; FAQ</p>
+            <h1 id="faq-title">Frequently Asked Questions</h1>
+
+            <div class="accordion" data-accordion>
+                <article class="accordion__item is-open">
+                    <h2><button class="accordion__trigger" type="button" aria-expanded="true"
+                            aria-controls="faq-panel-1" id="faq-trigger-1"><span>How does the developer api billing
+                                work?</span><span class="accordion__icon" aria-hidden="true"></span></button></h2>
+                    <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+                        <p>Our developer API scales dynamically with your usage. You are billed at the end of each
+                            billing cycle based strictly on the number of successful payload transactions processed.</p>
+                        <ul class="accordion__tags" aria-label="Topics">
+                            <li>Billing</li>
+                            <li>API Limits</li>
+                            <li>Usage-Based</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="accordion__item">
+                    <h2><button class="accordion__trigger" type="button" aria-expanded="false"
+                            aria-controls="faq-panel-2" id="faq-trigger-2"><span>Can I integrate this into an existing
+                                CI/CD flow?</span><span class="accordion__icon" aria-hidden="true"></span></button></h2>
+                    <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2" hidden>
+                        <p>Yes. The developer API is designed to fit into existing CI/CD workflows.</p>
+                    </div>
+                </article>
+                <article class="accordion__item">
+                    <h2><button class="accordion__trigger" type="button" aria-expanded="false"
+                            aria-controls="faq-panel-3" id="faq-trigger-3"><span>What is your guaranteed uptime
+                                SLA?</span><span class="accordion__icon" aria-hidden="true"></span></button></h2>
+                    <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3" hidden>
+                        <p>Our service is backed by a 99.9% uptime service level agreement.</p>
+                    </div>
+                </article>
+                <article class="accordion__item">
+                    <h2><button class="accordion__trigger" type="button" aria-expanded="false"
+                            aria-controls="faq-panel-4" id="faq-trigger-4"><span>Is there custom enterprise-grade
+                                pricing?</span><span class="accordion__icon" aria-hidden="true"></span></button></h2>
+                    <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4" hidden>
+                        <p>Contact our team to discuss a plan tailored to your organization.</p>
+                    </div>
+                </article>
+            </div>
+
+            <footer class="faq__footer">
+                <p><span class="status-dot" aria-hidden="true"></span>All systems operational</p><a
+                    href="mailto:support@example.com">Still have questions?</a>
+            </footer>
+        </section>
+    </main>
+</body>
+
+</html>

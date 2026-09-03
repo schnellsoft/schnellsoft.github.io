@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color-bg: oklch(20% 0.02 260);
+            --color-border: oklch(75% 0.15 260);
+            --color-fallback-bg: #16181d;
+            --color-fallback-border: #7d9be0;
+        }
+
+        @media (prefers-color-scheme: light) {
+            :root {
+                --color-bg: oklch(97% 0.01 260);
+                --color-border: oklch(45% 0.12 260);
+                --color-fallback-bg: #f4f5f7;
+                --color-fallback-border: #3a5aa8;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100dvh;
+            margin: 0;
+            background-color: var(--color-fallback-bg);
+            background-color: var(--color-bg);
+        }
+
+        .responsive-container {
+            width: 90vw;
+            height: 70vh;
+            height: 70dvh;
+            border-width: 15px;
+            border-style: solid;
+            border-color: var(--color-fallback-border);
+            border-color: var(--color-border);
+            border-radius: 0.5rem;
+        }
+
+        @supports (color: oklch(0% 0 0)) {
+            .responsive-container {
+                border-color: var(--color-border);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="responsive-container" aria-label="Responsive demo container"></main>
+
+    <button class="snd-btn">Click Me</button>
+</body>
+
+</html>

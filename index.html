@@ -1,135 +1,144 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>header-component</title>
 
-    <meta name="theme-color" content="#101017" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="ARKMED" />
-    <meta name="msapplication-TileColor" content="#101017" />
-    <meta name="msapplication-navbutton-color" content="#101017" />
-    <script src="./src/assets/uikit.min.js"></script>
-    <script src="./src/assets/uikit-icons.min.js"></script>
-    <style>
-      :root {
-        --snd-header-bkr-clr: #101017;
-        --snd-header-clr: #decf8c;
-        --snd-header-fsz: 1.4rem;
-        --snd-mob-header-fsz: 1.1rem;
-        --snd-mob-header-submenu-fsz: 0.7rem;
-        --snd-resct-bkr-clr: #372121;
-        --snd-resct-clr: #edc40e;
-        --snd-resct-fsz: 1.4rem;
-      }
-      main {
-        width: 100%;
-        height: 100vh;
-        background-color: rgb(161, 161, 161);
-      }
-      .snd-icon {
-        color: black;
-        width: 24px;
-        height: 24px;
-      }
-      .ct-above-all {
-        width: 200px;
-        height: 100px;
-        position: fixed;
-        right: 100px;
-        bottom: 100px;
-      }
-      :root * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-    </style>
-    <script type="module" crossorigin src="/assets/index-CKAh_UxS.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Cihi71qW.css" />
-  </head>
-  <body>
-    <snd-header-aa style="z-index: 100000"></snd-header-aa>
-    <snd-header-mob-aa
-      class="snd-mob-header-hidden"
-      style="z-index: 100000"
-    ></snd-header-mob-aa>
-    <main>
-      <div
-        class="snd-slide uk-position-relative uk-visible-toggle uk-light"
-        tabindex="-1"
-        uk-slideshow="animation: push"
-      >
-        <div class="uk-slideshow-items">
-          <div>
-            <img src="/assets/d1-NU1OSsxx.jpg" alt="" uk-cover />
-            <div class="uk-position-center uk-position-small uk-text-center">
-              <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
-              <p uk-slideshow-parallax="x: 200,-200">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/d2-BUfqGbCg.jpg" alt="" uk-cover />
-            <div class="uk-position-center uk-position-small uk-text-center">
-              <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
-              <p uk-slideshow-parallax="x: 200,-200">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="/assets/d3-FeaE4Kt6.jpg" alt="" uk-cover />
-            <div class="uk-position-center uk-position-small uk-text-center">
-              <h2 uk-slideshow-parallax="y: -50,0,0; opacity: 1,1,0">
-                Heading
-              </h2>
-              <p uk-slideshow-parallax="y: 50,0,0; opacity: 1,1,0">
-                Lorem ipsum dolor sit amet.
-              </p>
-            </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" sizes="150x150" href="favicon-150x150.png" />
+  <link rel="icon" type="image/png" sizes="300x300" href="favicon-300x300.png" />
+  <link rel="apple-touch-icon" href="favicon-150x150.png" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Arkmed - Interactive Dental Clinic Călărași</title>
+</head>
+
+<body>
+  <div class="site-frame">
+    <header class="site-header">
+      <a class="site-mark" href="#main-content" aria-label="Interactiv home">
+        <span class="site-mark__circle" aria-hidden="true">
+          <img class="site-mark__logo" src="logo.png" alt="" />
+        </span>
+        <span class="site-mark__word">Interactive Dental Clinic Călărași</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <div class="snd-cticons">
+          <a href="https://wa.me/40770389737" aria-label="WhatsApp +40 770 389 737"><svg>
+              <use href="src/data/sprite.svg#whatsup"></use>
+            </svg></a>
+          <a href="tel:+40770389737" aria-label="Call +40 770 389 737"><svg>
+              <use href="src/data/sprite.svg#phonecall"></use>
+            </svg></a>
+          <a href="location/index.html" aria-label="Locația noastră"><svg>
+              <use href="src/data/sprite.svg#location"></use>
+            </svg></a>
+        </div>
+        <a href="services/index.html">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="rule rule--primary" aria-hidden="true"></div>
+
+    <main id="main-content" class="site-main">
+      <section class="intro" aria-labelledby="page-title">
+        <p class="intro__eyebrow">Clinică Dentară Digitalizată</p>
+        <h1 id="page-title">Urmărește permanent zâmbetul perfect.</h1>
+        <p class="intro__copy">O echipă dedicată, practică, împreună în timp real cu dumneavoastră, pentru tratamente
+          dentare de calitate și zâmbete perfecte.
+        </p>
+      </section>
+
+      <div class="rule" aria-hidden="true"></div>
+
+      <section id="services" class="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p>01</p>
+          <h2 id="services-title">Ce oferim</h2>
+        </div>
+        <ul class="services__list">
+          <li>Servicii dentare moderne de calitate</li>
+          <li>Asistență stomatologică personalizată și permanentă</li>
+          <li>În curând: <br /> Monitorizarea sănătății dentare în timp real folosind tehnologie digitală modernă</li>
+        </ul>
+      </section>
+
+      <div class="rule" aria-hidden="true"></div>
+
+      <section id="contact" class="contact" aria-labelledby="contact-title">
+        <div class="section-heading">
+          <p>02</p>
+          <h2 id="contact-title">ARK MEDICAL CLINIC</h2>
         </div>
 
-        <a
-          class="uk-position-center-left uk-position-small uk-hidden-hover"
-          href
-          uk-slidenav-previous
-          uk-slideshow-item="previous"
-        ></a>
-        <a
-          class="uk-position-center-right uk-position-small uk-hidden-hover"
-          href
-          uk-slidenav-next
-          uk-slideshow-item="next"
-        ></a>
-      </div>
-      <!--
-    <div class="ct-above-all">
-      <button id="btn01">Click 01</button>
-    </div>
-    -->
-      <script>
-        let el = document.querySelector(".snd-slide");
-        let w = window.innerWidth;
-        let h = window.innerHeight;
-        el.setAttribute("ratio", "" + w + ":" + h);
-        window.addEventListener("resize", () => {
-          let w = window.innerWidth;
-          let h = window.innerHeight;
-          el.setAttribute("ratio", "" + w + ":" + h);
-        });
-      </script>
+        <div class="contact-card">
+          <figure class="contact-card__photo">
+            <img src="src/data/calarasi01small.jpg" alt="Ark Medical Clinic building facade in Călărași" />
+          </figure>
+
+          <div class="contact-card__info">
+            <a href="tel:+40770389737">Tel: 0770 389 737</a>
+            <a href="mailto:arkmedclinic@yahoo.com">Email: arkmedclinic@yahoo.com</a>
+            <address>Adresa: Romania, Jud. Calarasi, Calarasi, Str. Panduri, Nr. 8</address>
+          </div>
+
+          <table class="contact-card__schedule">
+            <caption>Orar</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Luni</th>
+                <td>9.30 – 17.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Marti</th>
+                <td>9.30 – 17.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Miercuri</th>
+                <td>9.30 – 17.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Joi</th>
+                <td>9.30 – 17.30</td>
+              </tr>
+              <tr>
+                <th scope="row">Vineri</th>
+                <td>9.30 – 14</td>
+              </tr>
+              <tr>
+                <th scope="row">Sambata</th>
+                <td>Liber</td>
+              </tr>
+              <tr>
+                <th scope="row">Duminica</th>
+                <td>Liber</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
-    <footer></footer>
-  </body>
+
+    <footer class="site-footer">
+      <p>Interactive Dental Clinic Călărași</p>
+      <ul class="social-links" aria-label="Social media">
+        <li><a href="https://www.facebook.com/ark.med.94" aria-label="Facebook"><svg aria-hidden="true">
+              <use href="src/data/sprite.svg#facebook"></use>
+            </svg></a></li>
+        <li><a href="#" aria-label="WhatsApp"><svg aria-hidden="true">
+              <use href="src/data/sprite.svg#whatsup"></use>
+            </svg></a></li>
+        <li><a href="https://www.instagram.com/ark_med_clinic" aria-label="Instagram"><svg aria-hidden="true">
+              <use href="src/data/sprite.svg#instagram"></use>
+            </svg></a></li>
+        <li><a href="location/index.html" aria-label="Location"><svg aria-hidden="true">
+              <use href="src/data/sprite.svg#location"></use>
+            </svg></a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
 </html>

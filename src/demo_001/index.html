@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../reset.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <h2>Hello, Worlds!</h2>
+    <button class="snd-btn-001">Click Me</button>
+    <!-- form interface for calculating days between dates -->
+    <form id="date-form">
+        <label for="begin">Begin Date:</label>
+        <input type="date" id="begin" name="begin" required />
+        <label for="end">End Date:</label>
+        <input type="date" id="end" name="end" required />
+        <button type="submit">Calculate Days</button>
+    </form>
+    <p id="result"></p>
+    <!-- form interface for input numbers and apply indConsecutivePrimeTriplets -->
+    <form id="prime-triplets-form">
+        <label for="numbers">Enter numbers (comma separated):</label>
+        <input type="text" id="numbers" name="numbers" required />
+        <button type="submit">Check Prime Triplets</button>
+    </form>
+    <p id="prime-triplets-result"></p>
+
+    <script src="bkr.js"></script>
+</body>
+
+</html>

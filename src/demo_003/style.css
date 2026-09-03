@@ -1,0 +1,239 @@
+ :root {
+     --faq-page: oklch(8% 0.01 285);
+     --faq-card: oklch(14% 0.012 285);
+     --faq-panel: oklch(18% 0.025 285);
+     --faq-border: oklch(24% 0.012 285);
+     --faq-border-active: oklch(68% 0.22 275);
+     --faq-heading: oklch(96% 0.006 285);
+     --faq-copy: oklch(68% 0.015 285);
+     --faq-accent: oklch(70% 0.22 275);
+     --faq-status: oklch(70% 0.18 165);
+ }
+
+ body {
+     align-items: center;
+     background: var(--faq-page);
+     color: var(--faq-copy);
+     display: flex;
+     flex-direction: column;
+     font-family: "Roboto", sans-serif;
+     justify-content: center;
+     min-block-size: 100svh;
+     padding: clamp(1rem, 5vw, 4rem);
+ }
+
+ .faq {
+     background: var(--faq-card);
+     border: 1px solid var(--faq-border);
+     border-radius: 1.25rem;
+     box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 24%);
+     inline-size: min(100%, 33.75rem);
+     padding: clamp(1.5rem, 5vw, 2.25rem);
+ }
+
+ .faq__eyebrow {
+     color: var(--faq-accent);
+     font-size: clamp(0.6875rem, 1.8vw, 0.75rem);
+     font-weight: 700;
+     margin-block-end: 0.5rem;
+     text-transform: uppercase;
+ }
+
+ .faq h1 {
+     color: var(--faq-heading);
+     font-size: clamp(1.25rem, 3.5vw, 1.375rem);
+     font-weight: 700;
+     line-height: 1.2;
+     margin-block-end: clamp(1.5rem, 5vw, 1.75rem);
+ }
+
+ .accordion {
+     display: grid;
+     gap: 0.625rem;
+ }
+
+ .accordion__item {
+     border: 1px solid var(--faq-border);
+     border-radius: 0.75rem;
+     overflow: hidden;
+ }
+
+ .accordion__item.is-open {
+     background: var(--faq-panel);
+     border-color: var(--faq-border-active);
+ }
+
+ .accordion__trigger {
+     align-items: center;
+     background: transparent;
+     border: 0;
+     color: var(--faq-heading);
+     cursor: pointer;
+     display: flex;
+     font: inherit;
+     font-size: clamp(0.9375rem, 2.5vw, 1rem);
+     font-weight: 700;
+     gap: 1rem;
+     justify-content: space-between;
+     line-height: 1.3;
+     min-block-size: 3.375rem;
+     padding: 0.875rem 1.125rem;
+     text-align: start;
+     inline-size: 100%;
+ }
+
+ .accordion__item:not(.is-open) .accordion__trigger {
+     color: var(--faq-copy);
+ }
+
+ .accordion__trigger:focus-visible,
+ .faq__footer a:focus-visible {
+     outline: 2px solid var(--faq-accent);
+     outline-offset: 3px;
+ }
+
+ .accordion__icon {
+     border-bottom: 2px solid currentColor;
+     border-right: 2px solid currentColor;
+     color: var(--faq-copy);
+     flex: 0 0 0.45rem;
+     height: 0.45rem;
+     transform: rotate(45deg) translateY(-0.15rem);
+     transition: transform 180ms ease;
+     width: 0.45rem;
+ }
+
+ .is-open .accordion__icon {
+     color: var(--faq-accent);
+     transform: rotate(225deg) translateY(-0.15rem);
+ }
+
+ .accordion__panel {
+     padding: 0 1.125rem 1rem;
+ }
+
+ .accordion__panel p {
+     color: var(--faq-copy);
+     font-size: clamp(0.8125rem, 2vw, 0.875rem);
+     line-height: 1.45;
+ }
+
+ .accordion__tags {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 0.375rem;
+     list-style: none;
+     margin-block-start: 0.75rem;
+ }
+
+ .accordion__tags li {
+     background: oklch(22% 0.012 285);
+     border-radius: 0.3rem;
+     color: var(--faq-copy);
+     font-size: 0.6875rem;
+     padding: 0.25rem 0.5rem;
+ }
+
+ .faq__footer {
+     align-items: center;
+     display: flex;
+     font-size: clamp(0.75rem, 2vw, 0.8125rem);
+     gap: 1rem;
+     justify-content: space-between;
+     margin-block-start: 2rem;
+ }
+
+ .faq__footer p {
+     align-items: center;
+     display: flex;
+     gap: 0.5rem;
+ }
+
+ .status-dot {
+     background: var(--faq-status);
+     border-radius: 50%;
+     block-size: 0.5rem;
+     display: inline-block;
+     inline-size: 0.5rem;
+ }
+
+ .faq__footer a {
+     color: var(--faq-accent);
+     font-weight: 700;
+     text-decoration: none;
+ }
+
+ @media (width < 28rem) {
+     .faq__footer {
+         align-items: flex-start;
+         flex-direction: column;
+     }
+ }
+
+ @media (prefers-reduced-motion: reduce) {
+     .accordion__icon {
+         transition: none;
+     }
+ }
+
+ body {
+     background-color: var(--mnt-01);
+     color: var(--mnt-03);
+     font-family: "Roboto", sans-serif;
+     letter-spacing: 0.05em;
+ }
+
+ header {
+     inline-size: 100%;
+     letter-spacing: 0.05em;
+     align-items: center;
+     border-bottom: 1px solid var(--mnt-07);
+     display: flex;
+     gap: 2rem;
+     justify-content: space-between;
+     margin-inline: auto;
+     max-inline-size: 90rem;
+     padding: clamp(1.25rem, 4vw, 2.5rem) clamp(1rem, 5vw, 4rem);
+     background-color: var(--yellow-90v);
+ }
+
+ header h1 {
+     color: var(--mnt-04);
+     color: var(--yellow-10v);
+     font-family: "Roboto", sans-serif;
+     font-size: clamp(1.75rem, 5vw, 4rem);
+     font-weight: 500;
+     line-height: 1.05;
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+ }
+
+ nav ul {
+     display: flex;
+     gap: clamp(1rem, 3vw, 2.5rem);
+     list-style: none;
+ }
+
+ nav a {
+     color: var(--mnt-04);
+     font-family: "Roboto", sans-serif;
+     font-size: clamp(0.95rem, 1.5vw, 1.125rem);
+     text-decoration: none;
+ }
+
+ nav a:hover,
+ nav a:focus-visible {
+     text-decoration: underline;
+     text-underline-offset: 0.25em;
+ }
+
+ @media (width < 40rem) {
+     header {
+         align-items: flex-start;
+         flex-direction: column;
+     }
+
+     nav ul {
+         flex-wrap: wrap;
+     }
+ }
