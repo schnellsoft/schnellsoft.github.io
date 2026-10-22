@@ -1,0 +1,86 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - 'link "Logo: sailing ship in a circle Snel Dan Intreprindere Individuala" [ref=e7] [cursor=pointer]':
+        - /url: "#top"
+        - 'img "Logo: sailing ship in a circle" [ref=e8]'
+        - generic [ref=e13]: Snel Dan Intreprindere Individuala
+      - group
+    - generic [ref=e14]:
+      - generic [ref=e15]:
+        - generic [ref=e16]: Software production · from source to sea
+        - heading "Software that holds its course, like the Danube." [level=1] [ref=e17]
+        - paragraph [ref=e18]: "Snel Dan Intreprindere Individuala designs and produces software products with a steady hand: site builders, clinic management and learning tools, built by a crew that knows the water."
+        - generic [ref=e19]:
+          - link "See our products" [ref=e20] [cursor=pointer]:
+            - /url: "#products"
+          - link "How we build" [ref=e21] [cursor=pointer]:
+            - /url: "#production"
+      - generic [ref=e23]:
+        - generic [ref=e28]: $ chart → requirements & design
+        - generic [ref=e29]: $ build → components & tests
+        - generic [ref=e30]: $ ship → deploy & support
+        - generic [ref=e31]: ✓ underway
+  - generic [ref=e38]:
+    - text: Software production
+    - heading "The whole voyage, built under one roof." [level=2] [ref=e39]
+    - list [ref=e40]:
+      - listitem [ref=e41]:
+        - generic [ref=e42]: "01"
+        - heading "Chart the route" [level=3] [ref=e45]
+        - paragraph [ref=e46]: We start with the problem and the people who will use the product, then draw the plan before a single line is written.
+      - listitem [ref=e47]:
+        - generic [ref=e48]: "02"
+        - heading "Build the vessel" [level=3] [ref=e51]
+        - paragraph [ref=e52]: Careful engineering, reusable components and tests, produced in steady increments so every release stays seaworthy.
+      - listitem [ref=e53]:
+        - generic [ref=e54]: "03"
+        - heading "Launch and sail on" [level=3] [ref=e57]
+        - paragraph [ref=e58]: Deployment, monitoring and support, so the product keeps moving long after the first day on the water.
+  - generic [ref=e60]:
+    - text: Our fleet
+    - heading "Three products, one shipyard." [level=2] [ref=e61]
+    - generic [ref=e62]:
+      - article [ref=e63]:
+        - generic [ref=e69]: Site builder
+        - heading "Site Builder" [level=3] [ref=e70]
+        - paragraph [ref=e71]: Compose pages from web components whose properties are set by an administrator, then export the result to the stack you already use.
+        - list [ref=e72]:
+          - listitem [ref=e73]: Customizable web components
+          - listitem [ref=e74]: Export to Astro, React, Next.js
+          - listitem [ref=e75]: WordPress blocks
+        - link "Ask about this product →" [ref=e76] [cursor=pointer]:
+          - /url: "#contact"
+      - article [ref=e77]:
+        - generic [ref=e80]: DCMS
+        - heading "Dental Clinic Management System" [level=3] [ref=e81]
+        - paragraph [ref=e82]: One system to run a dental clinic day to day, built for the way clinics actually work.
+        - list [ref=e83]:
+          - listitem [ref=e84]: Designed for dental clinics
+          - listitem [ref=e85]: Fast, web-based and installable
+          - listitem [ref=e86]: Clear tools for the whole team
+        - link "Ask about this product →" [ref=e87] [cursor=pointer]:
+          - /url: "#contact"
+      - article [ref=e88]:
+        - generic [ref=e93]: Education
+        - heading "Geometry for Math Students" [level=3] [ref=e94]
+        - paragraph [ref=e95]: Educational software for mathematics, starting with geometry, for gymnasium students, with AI support for learning.
+        - list [ref=e96]:
+          - listitem [ref=e97]: Geometry-first learning
+          - listitem [ref=e98]: AI-assisted practice
+          - listitem [ref=e99]: Made for secondary school
+        - link "Ask about this product →" [ref=e100] [cursor=pointer]:
+          - /url: "#contact"
+  - generic [ref=e106]:
+    - generic [ref=e107]: Our course
+    - heading "Built on the Danube, for everyone downstream." [level=2] [ref=e108]
+    - paragraph [ref=e109]: "The Danube links many countries and cities on its way to the sea. We build software in the same spirit: made to connect, to carry real work and to keep moving with a calm, reliable rhythm. Like a crew on the water, we rely on teamwork, timing and a clear heading."
+  - generic [ref=e116]:
+    - generic [ref=e117]:
+      - heading "Ready to set sail?" [level=2] [ref=e118]
+      - paragraph [ref=e119]: Tell us what you want to build, and we will chart the route together.
+      - link "deltasoft7@gmail.com" [ref=e120] [cursor=pointer]:
+        - /url: "mailto:"
+    - generic [ref=e121]:
+      - generic [ref=e122]: Snel Dan Intreprindere Individuala
+      - generic [ref=e128]: © 2026 Snel Dan Intreprindere Individuala. All rights reserved.

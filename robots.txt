@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sneldan.ro/sitemap.xml
