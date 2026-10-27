@@ -4,8 +4,8 @@
   "description": "Romanian software firm on the Danube: site builders, clinic systems, learning tools, cloud and AI.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f2834",
-  "theme_color": "#1a5c6b",
+  "background_color": "#07151c",
+  "theme_color": "#07151c",
   "lang": "en",
   "icons": [
     {
