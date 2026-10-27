@@ -260,9 +260,41 @@
                 #products,
                 #capabilities,
                 #more-products,
+                #learning,
                 #river,
                 #contact {
                     scroll-margin-top: 1rem
+                }
+
+                .learning-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+                    gap: 14px
+                }
+
+                .learning-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 72px;
+                    padding: 18px 16px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: var(--ink);
+                    background: linear-gradient(165deg, color-mix(in srgb, var(--card) 92%, #fff 8%), var(--foam));
+                    border: 1px solid var(--card-edge);
+                    border-radius: 14px;
+                    box-shadow: 0 8px 20px color-mix(in srgb, var(--deep-color) 6%, transparent);
+                    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease
+                }
+
+                .learning-link:hover {
+                    transform: translateY(-3px);
+                    border-color: color-mix(in srgb, var(--theme-color) 45%, var(--card-edge));
+                    box-shadow: 0 14px 28px color-mix(in srgb, var(--deep-color) 12%, transparent);
+                    opacity: 1
                 }
 
                 :focus-visible {
@@ -442,7 +474,8 @@
                     }
 
                     #capabilities,
-                    #more-products {
+                    #more-products,
+                    #learning {
                         padding: 44px 20px 56px !important
                     }
 
@@ -566,11 +599,13 @@
                     .terminal-cursor,
                     .product-card,
                     .capability-card,
-                    .more-card {
+                    .more-card,
+                    .learning-link {
                         animation: none
                     }
 
-                    .product-card:hover {
+                    .product-card:hover,
+                    .learning-link:hover {
                         transform: none
                     }
                 }
@@ -623,7 +658,8 @@
                                 style="color:#b7d7de;text-decoration:none">Production</a><a href="#products"
                                 style="color:#b7d7de;text-decoration:none">Products</a><a href="#capabilities"
                                 style="color:#b7d7de;text-decoration:none">Cloud &amp; AI</a><a href="#more-products"
-                                style="color:#b7d7de;text-decoration:none">More</a><a href="#contact"
+                                style="color:#b7d7de;text-decoration:none">More</a><a href="#learning"
+                                style="color:#b7d7de;text-decoration:none">Learning</a><a href="#contact"
                                 style="color:#fff;text-decoration:none;font-weight:600">Contact</a></nav>
                     </div>
                 </header>
@@ -874,8 +910,28 @@
                 </div>
             </section>
 
+            <section id="learning" class="reveal" style="max-width:1160px;margin:0 auto;padding:56px 32px 72px">
+                <span
+                    style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:#1a5c6b;font-weight:600">Interactive
+                    study</span>
+                <h2
+                    style="margin:10px 0 16px;font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);line-height:1.1;max-width:760px">
+                    Learning with demos</h2>
+                <p style="margin:0 0 28px;max-width:720px;color:#3a5563;line-height:1.65;font-size:17px">Explore
+                    subject areas through short, hands-on demos — pick a domain and learn by trying things out.</p>
+                <nav class="learning-grid" aria-label="Learning domains">
+                    <a class="learning-link" href="./learning/programming.html">Programming</a>
+                    <a class="learning-link" href="./learning/math.html">Math</a>
+                    <a class="learning-link" href="./learning/physics.html">Physics</a>
+                    <a class="learning-link" href="./learning/chemistry.html">Chemistry</a>
+                    <a class="learning-link" href="./learning/biology.html">Biology</a>
+                    <a class="learning-link" href="./learning/history.html">History</a>
+                    <a class="learning-link" href="./learning/philosophy.html">Philosophy</a>
+                </nav>
+            </section>
+
             <section id="river" style="background:{{deep}};color:#fff;position:relative">
-                <div style="background:#b8d0d9"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"
+                <div style="background:#d4e5ec"><svg viewBox="0 0 1440 120" preserveAspectRatio="none"
                         aria-hidden="true" style="display:block;width:100%;height:80px;">
                         <path d="M0,60 C240,10 480,110 720,60 C960,10 1200,110 1440,60 L1440,120 L0,120Z"
                             style="fill:#0f2834"></path>
@@ -1017,6 +1073,18 @@
                                 <li><a href="./products/dcms.html">Dental Clinic Management</a></li>
                                 <li><a href="./products/geometry.html">Geometry for Math Students</a></li>
                                 <li><a href="./products/portfolio.html">Sites we built</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Learning with demos</h3>
+                            <ul class="footer-contacts">
+                                <li><a href="./learning/programming.html">Programming</a></li>
+                                <li><a href="./learning/math.html">Math</a></li>
+                                <li><a href="./learning/physics.html">Physics</a></li>
+                                <li><a href="./learning/chemistry.html">Chemistry</a></li>
+                                <li><a href="./learning/biology.html">Biology</a></li>
+                                <li><a href="./learning/history.html">History</a></li>
+                                <li><a href="./learning/philosophy.html">Philosophy</a></li>
                             </ul>
                         </div>
                     </div>
