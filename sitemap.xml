@@ -31,6 +31,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://sneldan.ro/learning/lit/repeat-vs-map.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sneldan.ro/learning/math.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
